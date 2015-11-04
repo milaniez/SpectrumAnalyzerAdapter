@@ -1,0 +1,48 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+fft_adc                                                           0x2800    4096
+dac_inputs_min                                                    0x3800     256
+dac_inputs_max                                                    0x3900     256
+state                                                             0x3A00       1
+x_val                                                             0x3A01       2
+y_val                                                             0x3A03       2
+key_row_pos                                                       0x3A05       1
+key_pos                                                           0x3A06       1
+key                                                               0x3A07       1
+next_menu_state                                                   0x3A08       1
+current_menu_state                                                0x3A09       1
+number_input_number_cntr                                          0x3A0A       1
+number                                                            0x3A0B       2
+abs_to_dac_coeff0                                                 0x3A0D       4
+abs_to_dac_coeff1                                                 0x3A11       4
+oscope_min                                                        0x3A15       4
+oscope_div                                                        0x3A19       4
+next_unit                                                         0x3A1D       1
+current_unit                                                      0x3A1E       1
+gain_index                                                        0x3A1F       1
+next_gain_index                                                   0x3A20       1
+_base_y                                                           0x3A21       4
+_lcd_x                                                            0x3A25       1
+_lcd_y                                                            0x3A26       1
+_lcd_maxx                                                         0x3A27       1
+_seed                                                             0x3A28       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+TCC0_CTRLA_temp                                                   R3           1
+adca_offset                                                       R4,R5        2
+sampling_state                                                    R2           1
+dma_1st_int                                                       R7           1
+dac_x_ptr                                                         R6           1
+dac_x_port_ptr0                                                   R9           1
+dac_x_port_ptr1                                                   R8           1
+dac_y_ptr                                                         R11          1
+dac_y_max                                                         R10          1
+key_col_pos_temp                                                  R13          1
+key_col_pos                                                       R12          1
